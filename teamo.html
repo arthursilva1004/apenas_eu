@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubra como dizer 'Eu te amo' em todas as línguas do mundo. Um site dedicado ao amor e à conexão global.">
+    <meta name="keywords" content="amor, eu te amo, todas as línguas, romantismo, linguagens do amor">
+    <meta name="author" content="Seu Nome">
+    <title>Eu Te Amo em Todas as Línguas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6e6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ff9999;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            font-size: 2em;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #cc0066;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px;
+            font-size: 1.2em;
+            color: #404040;
+            position: relative;
+        }
+
+        li::before {
+            content: "\2665";
+            color: #ff6666;
+            font-size: 1.5em;
+            position: absolute;
+            left: -25px;
+            top: 5px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #ff9999;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        .search {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .search input[type="text"] {
+            padding: 10px;
+            width: 80%;
+            max-width: 500px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #cc0066;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .search button:hover {
+            background-color: #b3005c;
+        }
+
+        .hearts {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .hearts span {
+            font-size: 2em;
+            color: #ff6666;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Eu Te Amo em Todas as Línguas
+    </header>
+    <main>
+        <h1>O amor é a linguagem universal 🌎❤️</h1>
+        <p>Você é chata mas eu TE AMO ❤️</p>
+
+        <div class="search">
+            <input type="text" id="search" placeholder="Pesquise sua língua favorita...">
+            <button onclick="googleSearch()">Pesquisar no Google</button>
+        </div>
+
+        <ul id="languages">
+            <li>Português: Eu te amo</li>
+            <li>Inglês: I love you</li>
+            <li>Francês: Je t'aime</li>
+            <li>Espanhol: Te amo</li>
+            <li>Italiano: Ti amo</li>
+            <li>Alemão: Ich liebe dich</li>
+            <li>Japonês: 愛してる (Aishiteru)</li>
+            <li>Chinês: 我爱你 (Wǒ ài nǐ)</li>
+            <li>Coreano: 사랑해 (Saranghae)</li>
+            <li>Árabe: أحبك (Uhibbuka)</li>
+            <li>Russo: Я тебя люблю (Ya tebya lyublyu)</li>
+            <li>Hindi: मैं तुमसे प्यार करता हूँ (Main tumse pyaar karta hoon)</li>
+            <li>Grego: Σ' αγαπώ (S'agapó)</li>
+            <li>Turco: Seni seviyorum</li>
+            <li>Hebraico: אני אוהב אותך (Ani ohev otach)</li>
+            <li>Suíço-alemão: Ich lieb Di</li>
+        </ul>
+
+        <div class="hearts">
+            <span>&hearts;</span> <span>&hearts;</span> <span>&hearts;</span>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 - Criado com amor por Seu Nome
+    </footer>
+
+    <script>
+        function googleSearch() {
+            const query = document.getElementById('search').value;
+            if (query) {
+                const url = `https://www.google.com/search?q=eu+te+amo+em+${encodeURIComponent(query)}`;
+                window.open(url, '_blank');
+            } else {
+                alert('Por favor, insira um idioma para pesquisar!');
+            }
+        }
+    </script>
+</body>
+</html>
